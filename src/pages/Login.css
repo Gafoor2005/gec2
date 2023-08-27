@@ -1,0 +1,159 @@
+body{
+    background-color: rgb(5, 63, 63);
+    color: rgb(192, 216, 216);
+}
+#root{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Login{
+    display: flex;
+    background-color: rgb(24, 41, 41);
+    margin: 1em auto;
+    border-radius: 1em;
+    width: fit-content;
+    padding: 1.5em;
+}
+.card h3{
+    margin: 0;
+    font-size: larger;
+}
+.card{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    min-width: 24em;
+}
+input{
+    font-size: medium;
+    font-weight: 500;
+    border: none;
+    font-family: 'Noto Sans',sans-serif;
+    line-height: 3em;
+    padding: 0 1em;
+    background: #316245;
+    outline: none;
+    border-radius: 0.2em;
+    color: inherit;
+}
+input:focus{
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.card h5{
+    margin: 1em 0 0 0;
+}
+.checkout{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+.checkout button{
+    height: fit-content;
+    background: #316245;
+    margin: auto 0;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 2em;
+    color: inherit;
+    font-size: medium;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.checkout .left{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+.checkout .left > div{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+.checkout .left input{
+    height: 1.2em;
+    width: 1.2em;
+}
+.checkout .left input:hover{
+    cursor: pointer;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: inherit;
+    opacity: .75; /* Firefox */
+}
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: inherit;
+}
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: inherit;
+}
+
+.img{
+    display: none;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.img img{
+    width: 45%;
+    border-radius: 50%;
+}
+.Login hr{
+    margin: 0 1.5em;
+}
+.img h2{
+    font-size: larger;
+}
+@media (max-width:805px) {
+    .Login hr {
+        margin: 1.5em 0;
+    }
+    .Login{
+        flex-direction: column-reverse;
+    }
+    @media (max-width:660px) {
+        .Login hr{
+            display: none;
+        }
+        .img img {
+            width: 19%;
+        }
+        .img h2{
+            font-size: medium;
+        }
+        .img{
+            display: none;
+            /* flex-direction: row;
+            gap: 1em;
+            align-items: center;
+            text-align: left;
+            justify-content: space-around; */
+        }
+        .card{
+            min-width: 20em;
+        }
+        @media (max-width:380px) {
+            .Login{
+                width: 82%;
+            }
+            .card{
+                min-width: unset;
+            }
+            
+            .checkout button{
+                margin-left: auto;
+            }
+            .checkout{
+                column-gap: 3em;
+                flex-wrap: wrap;
+                row-gap: 1em;
+            }
+        }
+    }
+}

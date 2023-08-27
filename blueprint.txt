@@ -1,0 +1,52 @@
+main>
+news posts - announcements
+about
+ranking scoreboard
+events
+
+Main about
+
+
+library
+-   syllabus
+-   learning materials
+-   feedback to request more resources
+
+ecap - student profile
+-   students details
+-   marks list
+-   attendence
+-   ranking scoreboard
+-   fee payment
+
+all chat
+
+settings
+-   privacy
+
+faculty - manage
+*   biodata access
+-   attendence
+-   marks
+-   adding own materials
+
+login
+-   student login
+-   college login
+-   sessions
+-   firebase google login
+-   two factor authentication through OTP-email
+
+admin page
+-   permissions to faculty
+-   adding students + faculty
+-   adding news posts
+-   adding material to library
+-   reciving feedback
+
+
+footer
+- news
+- all chat
+- library
+- events
